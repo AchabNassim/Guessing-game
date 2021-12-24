@@ -1,0 +1,64 @@
+ * {
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+ body {
+ 	height: 80vh;
+ 	background-image: url(background.jpg);
+ 	background-size: cover;
+ }
+
+ .container {
+ 	background-color: white;
+ 	display: flex;  
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	color: black;
+ 	width: 600px;
+ 	height: 400px;
+ 	margin: 80px auto;
+    border-radius: 8px;
+ }
+.container h1 {
+    font-size: 40px;
+}
+
+ .container h3 {
+ 	font-size: 19px;
+    width: 60%;
+    text-align: center;
+ 	margin: 20px auto 40px;
+
+ }
+
+
+ #guess {
+ 	width:120px;
+ 	padding: 8px;
+ }
+
+ #my_btn {
+    height: 30px;
+ 	width: 70px;
+ 	padding: 3px;
+    margin-right: 2px; 	
+ }
+#my_btn2 {
+    height: 30px;
+	width: 70px;
+	padding: 3px;
+
+}
+
+.container p {
+	margin-top: 12px;
+	font-size: 17px;
+}
+
+.buttons {
+    display: flex;
+    margin-bottom: 10px;
+
+}
