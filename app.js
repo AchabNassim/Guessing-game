@@ -7,7 +7,7 @@ let message3 = document.getElementById ("message3");
 let tries = 10;
 var numberOfGuesses = 0;
 var guessNumbers = [];
-
+var button = document.getElementById("my_btn")
 
 function play () {
 		let user_guess = document.getElementById ("guess").value ; 
@@ -42,6 +42,7 @@ function play () {
      	}
      	if (numberOfGuesses >= 10 ) {
      		message0.textContent = "GAME OVER"
+     		button.disabled = true
      		document.getElementById("message0").style.color = "red";
      		alert ("Game Over, Please restart the game.")
      	}
