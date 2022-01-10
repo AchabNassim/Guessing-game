@@ -8,6 +8,7 @@ let tries = 10;
 var numberOfGuesses = 0;
 var guessNumbers = [];
 var button = document.getElementById("my_btn")
+let container = document.querySelector('.container')
 
 function play () {
 		let user_guess = document.getElementById ("guess").value ; 
@@ -47,4 +48,10 @@ function play () {
      		alert ("Game Over, Please restart the game.")
      	}
     }
+}
+
+container.addEventListener('mousemove', changeColor)
+
+function changeColor(e){
+	document.body.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY},50)`
 }
